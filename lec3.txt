@@ -1,0 +1,23 @@
+public static void main (String[] args){
+int x=5;
+int y = 7;
+System.out.println("Value of X is: " +x);
+System.out.println("Value of Y is: " +y);
+
+byte b =10;
+System.out.println("Value of B is "+b);
+
+byte b2 = 129;
+System.out.println("B is "+b);
+
+//widening (Narrowing/Upcasting)
+int i = b; 
+System.out.println("I is "+i);
+
+byte b2 = 129;
+System.out.println("B is "+b);
+
+byte b3 = 205;
+System.out.println("C is "+b3);
+
+}
