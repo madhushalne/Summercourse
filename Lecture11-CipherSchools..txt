@@ -1,0 +1,30 @@
+import java.util.*;
+
+class car{
+int maxspeed;
+abstract void accelerate();
+}
+abstract void brake();
+abstract class BMW extends car{
+}
+class BMW2 extends BMW{
+void brake()
+{
+System.out.println("BMW is applying Brake");
+}
+}
+abstract class A{
+int x =10;
+void fun()
+{
+System.out.println("Hello, Im A");
+}
+}
+public class AbstractStudy{
+public static void main(String[] args)
+{
+car c= new car(); //cannot in stantiate an abstract class
+BMW beemer = new BMW();
+beemer.accelerate();
+}
+}
