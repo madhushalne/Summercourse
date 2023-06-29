@@ -1,0 +1,54 @@
+import java.util.*;
+
+public class Students{
+int rollno; //Camel Casing - noOfCars
+String Name;
+
+public static void main (String[] args)
+{
+Students s1= new Students();
+Students s2= new Students();
+Students s3= new Students();
+s1.name  = "Ram";
+s1.rollNo = 1;
+s2.name = "Sham";
+s2.rollNo = 2;
+s3.name = "Ram";
+s3.rollno = 1;
+System.out.println(s1.name);
+System.out.println(s1.rollno);
+
+System.out.println(s2.name);
+System.out.println(s2.rollno);
+
+System.out.println(s3.name);
+System.out.println(s3.rollno);
+
+}
+}
+
+//inheritance
+
+import java.util.*;
+
+class Shape{
+double pi= 3.14;
+double getSquare(int r)
+{
+return r*r;
+}
+}
+class circle extends Shape 
+{
+void area(int r)
+{
+System.out.println(pi*getSquare(r));
+}
+}
+public class InheritanceStudy{
+public static void main(String[] args)
+{
+circle c = new circle();
+circle.area(5);
+}
+}
