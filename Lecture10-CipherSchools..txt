@@ -1,0 +1,28 @@
+import java.util.*;
+class A{
+/*
+final int x = 5; //final variables */
+//either assign the values at time of declaration or assign the value inside constructors
+A()
+{
+noOfDigits = 10;
+}
+final void func
+{
+System.out.println("Hi, I am a function in class A");
+}
+
+}
+final class B extends A{ // final classes cannot be inherited
+/* void func()
+{
+System.out.println("I am a function in B overriding function in A");
+} */
+
+}
+public class FinalStudy{
+public static void main(String[] args){
+
+}
+}
+
