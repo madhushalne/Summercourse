@@ -1,0 +1,74 @@
+import java.util.*;
+
+interface Shape{
+double pi= 3.14; //public, static , final
+//pi=5;
+double getSquare(double r); //public and abstract
+}
+
+class Circle implements Shape{
+
+public double getSquare (double r)
+{
+return r*r;
+}
+void fun(){
+System.out.println("Hey, I implemented an interface named Shape");
+}
+}
+
+public class InterfaceStudy {
+public static void main (String args[]){
+
+Circle c = new Circle();
+System.out.println(c.getSquare(5));
+c.fun();
+}
+}
+
+//multiple inheritance
+
+import java.util.*;
+
+interface M{
+int x = 10;
+void fun();
+}
+interface N
+{
+int x = 20;
+void fun();
+}
+
+public void fun()
+/* class C implements M,N 
+//multiple inheritance{
+public void fun(){
+System.out.println("Hello, I'm function in C");
+System.out.println(M.x);
+System.out.println(N.x);
+System.out.println(M.super.hashCode());
+System.out.println(N.super.hashCode());
+}
+} */ 
+
+interface O extends M,N //Multiple inheritance through Interface
+{
+void fun();
+}
+class D implements O
+{ public void fun(){
+System.out.println("Hello, I'm function in D");
+}
+}
+
+public class MultipleInheritanceStudy
+{
+public static void main(String[] args)
+{
+C c = new C();
+c.fun();
+D d = new();
+d.fun();
+}
+}
