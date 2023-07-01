@@ -41,7 +41,7 @@ void fun();
 }
 
 public void fun()
-/* class C implements M,N 
+class C implements M,N 
 //multiple inheritance{
 public void fun(){
 System.out.println("Hello, I'm function in C");
@@ -50,7 +50,7 @@ System.out.println(N.x);
 System.out.println(M.super.hashCode());
 System.out.println(N.super.hashCode());
 }
-} */ 
+} 
 
 interface O extends M,N //Multiple inheritance through Interface
 {
